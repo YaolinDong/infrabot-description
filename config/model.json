@@ -1,0 +1,45 @@
+{
+  "model_id": "infrabot_h7c",
+  "model_version": "0.1.0",
+  "source_export": "infrabot-H7C_urdf_261116",
+  "source_export_date": "2026-11-16",
+  "root_frame": "base_link",
+  "tip_frame": "Link_flange",
+  "joint_order": [
+    "Joint_1",
+    "Joint_2",
+    "Joint_3",
+    "Joint_4",
+    "Joint_5",
+    "Joint_6",
+    "Joint_7"
+  ],
+  "units": {
+    "length": "m",
+    "angle": "rad",
+    "mass": "kg",
+    "inertia": "kg*m^2",
+    "effort": "N*m",
+    "velocity": "rad/s"
+  },
+  "display_poses": {
+    "zero": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bent": [
+      0.0,
+      1.2,
+      0.0,
+      1.5,
+      0.0,
+      0.4,
+      0.0
+    ]
+  }
+}
