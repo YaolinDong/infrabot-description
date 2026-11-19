@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: MIT
+name: Validate robot description
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  model:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r requirements.txt
+      - run: python -B tools/validate_model.py --report .build/validation.json
+      - run: python -B -m unittest discover -s tests -v
+      - run: python -B tools/export_urdf.py --mesh-paths relative
+  ros-package:
+    runs-on: ubuntu-24.04
+    container: ros:jazzy-ros-base
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and install the description package
+        shell: bash
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends build-essential cmake python3-colcon-common-extensions ros-jazzy-ament-cmake
+          source /opt/ros/jazzy/setup.bash
+          colcon build --packages-select infrabot_description
+          source install/setup.bash
+          share="$(ros2 pkg prefix infrabot_description)/share/infrabot_description"
+          test -f "$share/urdf/infrabot_h7c.urdf"
+          test -f "$share/meshes/h7c/Link_7.STL"
+          test -f "$share/rviz/infrabot.rviz"
