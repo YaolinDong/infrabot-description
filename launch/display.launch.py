@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: Apache-2.0
 # Copyright (c) 2026 YaolinDong
 """Display the standalone H7C model; no hardware drivers are launched."""
 from ament_index_python.packages import get_package_share_directory

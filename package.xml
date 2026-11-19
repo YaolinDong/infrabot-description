@@ -5,9 +5,7 @@
   <description>URDF, mesh assets and identified parameters for the InfraBot H7C arm.</description>
   <maintainer email="dong1505lin@gmail.com">YaolinDong</maintainer>
   <author email="dong1505lin@gmail.com">YaolinDong</author>
-  <license>CERN-OHL-P-2.0</license>
-  <license>MIT</license>
-  <license>CC-BY-4.0</license>
+  <license file="LICENSE">Apache-2.0</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <exec_depend>ament_index_python</exec_depend>
   <exec_depend>launch</exec_depend>

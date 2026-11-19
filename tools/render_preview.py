@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: Apache-2.0
 # Copyright (c) 2026 YaolinDong
 """Render the actual URDF mesh assembly; requires an EGL-capable OpenGL driver."""
 import argparse

@@ -69,10 +69,6 @@ python3 examples/forward_kinematics.py --positions 0 1.2 0 1.5 0 0.4 0
 
 ## 许可
 
-| 文件 | 许可 |
-|---|---|
-| URDF、网格、模型参数 | [CERN-OHL-P-2.0](LICENSE) |
-| 脚本、测试、launch 和构建文件 | [MIT](LICENSES/MIT.txt) |
-| 文档和图片 | [CC-BY-4.0](LICENSES/CC-BY-4.0.txt) |
+本仓库统一采用 [Apache License 2.0](LICENSE)，涵盖 URDF、网格、模型参数、代码、配置、文档和图片。
 
 Copyright © 2026 **YaolinDong（董耀琳）** · [dong1505lin@gmail.com](mailto:dong1505lin@gmail.com)

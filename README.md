@@ -69,10 +69,6 @@ Both scripts need only the Python standard library.
 
 ## License
 
-| Files | License |
-|---|---|
-| URDF, meshes, model parameters | [CERN-OHL-P-2.0](LICENSE) |
-| Scripts, tests, launch and build files | [MIT](LICENSES/MIT.txt) |
-| Documentation and images | [CC-BY-4.0](LICENSES/CC-BY-4.0.txt) |
+The [Apache License 2.0](LICENSE) covers this repository, including the URDF, meshes, model parameters, code, configuration, documentation and images.
 
 Copyright © 2026 **YaolinDong (董耀琳)** · [dong1505lin@gmail.com](mailto:dong1505lin@gmail.com)

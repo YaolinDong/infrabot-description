@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: Apache-2.0
 # Copyright (c) 2026 YaolinDong
 """Small URDF reading and kinematics helpers; no ROS runtime required."""
 import math
