@@ -1,0 +1,12 @@
+/.venv/
+/.build/
+/build/
+/install/
+/log/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.swp
+.env
+.env.*
