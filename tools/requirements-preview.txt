@@ -1,0 +1,6 @@
+-r ../requirements.txt
+numpy==1.26.4
+trimesh==5.2.1
+scipy==1.17.1
+pyrender==0.1.45
+Pillow==13.0.0
